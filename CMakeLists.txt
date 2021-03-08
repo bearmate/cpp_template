@@ -5,6 +5,10 @@ include(cmake/Doxygen.cmake)
 include(cmake/PreventInSourceBuilds.cmake)
 include(cmake/Sanitizers.cmake)
 include(cmake/StaticAnalyzers.cmake)
+include(cmake/Vcpkg.cmake)
+
+# ---- Setup Vcpkg ----
+setup_vcpkg()
 
 # ---- Prevent Building In-Source ----
 prevent_in_source_builds()
